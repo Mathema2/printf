@@ -25,9 +25,9 @@ char *s = va_arg(l, char *);
 		_puts("\\x");
 		count += 2;
 		res = convert(s[i], 16, 0);
-	if (!res[1])
+if (!res[1])
 		count += _putchar('0');
-		count += _puts(res);
+	count += _puts(res);
 }
 	else
 		count += _putchar(s[i]);

@@ -17,10 +17,10 @@ if (f->space == 1 && f->plus == 0 && n >= 0)
 	res += _putchar(' ');
 if (f->plus == 1 && n >= 0)
 	res += _putchar('+');
-if (n <= 0)
+	if (n <= 0)
 	res++;
-	print_number(n);
-	return (res);
+print_number(n);
+return (res);
 }
 
 /**
@@ -57,9 +57,9 @@ if (n < 0)
 }
 else
 	n1 = n;
-if (n1 / 10)
+	if (n1 / 10)
 	print_number(n1 / 10);
-	_putchar((n1 % 10) + '0');
+_putchar((n1 % 10) + '0');
 }
 
 /**
